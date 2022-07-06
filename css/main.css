@@ -1,0 +1,138 @@
+:root {
+    --text-color: black;
+    --background-page-color: white;
+    --border-color: #CCCCCC;
+    --backgroud-buttons-color: #E5E5E5;
+}
+
+* {
+    font-size: 1rem;
+    /* outline: 3px solid red; */
+}
+
+/* header */
+
+.header {
+    background-color: aqua;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* header menu */
+
+.header .header-menu-button {
+    height: 40px;
+    width: 40px;
+    padding: 13.5px 11px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.header .header-menu-button:active {
+    background-color: gainsboro;
+}
+
+.header-menu-button .header-menu-button__line {
+    height: 0px;
+    border-bottom: 1px solid black;
+}
+
+.header-menu-button :nth-child(2) {
+    margin: 5px 0;
+}
+
+.header-menu .header-logo {
+    width: 90px;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* header search bar */
+
+.header .header-search {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.header .header-search__search-bar {
+    display: flex;
+    height: 40px;
+    width: 45%;
+    max-width: 700px;
+}
+
+.header-search__search-bar .search-icon {
+    display: inline-block;
+    margin: 0;
+}
+
+.header-search__search-bar .text {
+    border: 1px solid var(--border-color);
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.header-search__search-bar .search-button {
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    width: 64px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-end-end-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: var(--backgroud-buttons-color);
+}
+
+.header-search__search-bar .search-button svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 5px auto;
+}
+
+.header .header-options {
+    justify-self: flex-end;
+}
+
+.header .header-search .microphone-button {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 8px 15px;
+}
+
+/* header options */
+.header-options {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.categories-button {
+    height: 24px;
+}
+
+
+.categories-button__image {
+    width: 24px;
+    color: white;
+}
+
+.sign-in-button {
+
+}
+
+.sign-in-button__image {
+    display: inline-block;
+    width: 24px;
+}
+
