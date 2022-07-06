@@ -27,7 +27,8 @@ body {
 
 /* header menu */
 .header-menu {
-    width: max-content;
+    min-width: max-content;
+    height: 40px;
 }
 
 .header .header-menu-button {
@@ -64,7 +65,6 @@ body {
     display: flex;
     justify-content: center;
     width: 70%;
-
 }
 
 .header .header-search__search-bar {
