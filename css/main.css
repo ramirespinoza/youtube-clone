@@ -10,18 +10,25 @@
     /* outline: 3px solid red; */
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* header */
 
 .header {
-    background-color: aqua;
     height: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 /* header menu */
+.header-menu {
+    width: max-content;
+}
 
 .header .header-menu-button {
     height: 40px;
@@ -57,6 +64,7 @@
     display: flex;
     justify-content: center;
     width: 70%;
+
 }
 
 .header .header-search__search-bar {
@@ -75,6 +83,7 @@
     border: 1px solid var(--border-color);
     height: 100%;
     margin: 0;
+    padding-left: 5px;
     width: 100%;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -119,6 +128,7 @@
 }
 .categories-button {
     height: 24px;
+    margin-right: 15px;
 }
 
 
@@ -128,11 +138,32 @@
 }
 
 .sign-in-button {
-
+    display: flex;
+    border: 1px solid #5391E1;
+    color: #5391E1;
+    fill: #5391E1;
+    margin-right:15px;
+    width: 109px;
+    height: 36px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2px;
+    text-decoration: none;
 }
 
 .sign-in-button__image {
-    display: inline-block;
+    display: inline;
     width: 24px;
 }
 
+.sign-in-button__text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.options-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
